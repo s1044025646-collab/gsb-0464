@@ -1,0 +1,23 @@
+{
+  "name": "tls-ja3-offline",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "离线 TLS ClientHello 分片解析与 JA3 指纹核验后端（仅 API 与 CLI）",
+  "bin": {
+    "ja3cli": "dist/src/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "tsx --test test/*.test.ts",
+    "start": "node dist/src/server.js",
+    "dev": "tsx src/server.ts",
+ "demo": "tsx scripts/demo.ts",
+    "gen-fixtures": "tsx scripts/gen-fixtures.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3",
+    "@types/node": "^22.10.2"
+  }
+}
